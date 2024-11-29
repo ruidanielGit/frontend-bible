@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mondrian Project</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            margin-bottom: 25px;
+        }
+
+        .flexbox-container {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .grid-container {
+            display: grid;
+            width: fit-content;
+            background-color: #000;
+            grid-template-columns: 320px 198px 153px 50px;
+            grid-template-rows: 414px 130px 155px 20px;
+            gap: 9px;
+        }
+
+        .grid-item {
+            background-color: #F0F1EC;
+        }
+
+        .red {
+            grid-column: span 1;
+            background-color: #E72F24;
+        }
+
+        .blue {
+            grid-area: 2 / 4;
+            background-color: #004592;
+            border-bottom: 10px solid;
+        }
+
+        .yellow {
+            grid-area: 4 / 2;
+            background-color: #F9D01E;
+        }
+
+        .black {
+            grid-area: 4 / 3;
+            background-color: #232629;
+        }
+
+        .first {
+            grid-column: span 3;
+        }
+
+        .second {
+            grid-row: span 2;
+        }
+
+        .third {
+            grid-column: span 2;
+            grid-row: span 2;
+        }
+
+        .fourth {
+            grid-row: span 2;
+        }
+
+    </style>
+</head>
+
+<body>
+<!-- Write your HTML here -->
+
+<div class="flexbox-container">
+    <h2>My own recreation of the painting from</h2>
+    <h1>Mondrian</h1>
+    <div class="grid-container">
+        <div class="grid-item red"></div>
+        <div class="grid-item blue"></div>
+        <div class="grid-item yellow"></div>
+        <div class="grid-item black"></div>
+        <div class="grid-item first white"></div>
+        <div class="grid-item second white"></div>
+        <div class="grid-item third white"></div>
+        <div class="grid-item fourth white"></div>
+        <div class="grid-item fifth white"></div>
+    </div>
+</div>
+
+</body>
+
+</html>

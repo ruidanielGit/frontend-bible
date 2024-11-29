@@ -1,0 +1,40 @@
+/*TODO: Change the background color for each device*/
+/*[lightsalmon] Mobile Devices: 319px — 480px*/
+/*                                 [powderblue] iPads and Tablets: 481px — 1200px*/
+/*                                                                    [limegreen] Laptops: 1201px — 1600px*/
+/*                                                                                             [seagreen] Desktops: 1601px and more*/
+
+body {
+    background-color: aquamarine;
+}
+
+/* mobile devices */
+@media (min-width: 319px) and (max-width: 480px) {
+    body {
+        background-color: lightsalmon;
+    }
+}
+
+/* iPads and Tablets */
+@media (min-width: 481px) and (max-width: 1200px) {
+    body {
+        background-color: powderblue;
+    }
+}
+
+/* laptops */
+@media (min-width: 1201px) and (max-width: 1600px) {
+    body {
+        background-color: limegreen;
+    }
+}
+
+/* desktops */
+@media (min-width: 1601px) {
+    body {
+        background-color: seagreen;
+    }
+}
+
+
+
