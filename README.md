@@ -1,1 +1,1 @@
-# wdm-web-docs-practice
+# frontend-bible
